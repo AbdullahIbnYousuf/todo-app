@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/todos";
+const API_URL = "https://todo-app-api-cse8.onrender.com/api/todos";
 const todoForm = document.getElementById("todo-form");
 const todoInput = document.getElementById("todo-input");
 const todoList = document.getElementById("todo-list");
