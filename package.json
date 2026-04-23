@@ -2,10 +2,10 @@
   "name": "todo-app",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "dev": "nodemon backend/src/server.js",
-    "start": "node backend/src/server.js"
-  },
+"scripts": {
+  "dev": "nodemon backend/src/server.js",
+  "start": "node backend/src/server.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
