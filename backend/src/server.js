@@ -9,6 +9,17 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Todo API is running',
+    endpoints: ['/api/todos', '/health']
+  });
+});
+
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 // Initialize table on startup (Postgres uses SERIAL instead of AUTOINCREMENT)
 pool.query(`
   CREATE TABLE IF NOT EXISTS todos (
